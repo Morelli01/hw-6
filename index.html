@@ -365,11 +365,67 @@
         </footer>
             <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
-                    <button class="backdrop-" data-modal-close type="button">
+                    <button class="backdrop-btn" data-modal-close type="button">
                         <svg class="backdrop-img" width="8" height="8">
                             <use href="./img/icons.svg#icon-Vector"></use>
                         </svg>
                     </button>
+                    <p class="modal-title">Leave your contacts and we will call you back</p>
+                    <form class="modal-form">
+                        <ul class="modal-list">
+                        <li class="modal-item">
+                            <div class="modal-wrap">
+                            <label for="user-name"class="input-label">Name</label>
+                            <div class="modal-wrap">
+                        <input class="modal-input"
+                            name="user-name"
+                            type="user-text"
+                            id="user-name"
+                            required
+                            >
+                            <svg class="modal-icon" width="12" height="12">
+                                <use href="./img/icons.svg#icon-Vector-1"></use>
+                            </svg>
+                            </div>
+                            </li>
+                        <li class="modal-item">
+                            <label for="user-tel" class="input-label">Phone</label>
+                            <div class="modal-wrap">
+                        <input class="modal-input"
+                            name="user-tel"
+                            type="tel"
+                            id="user-tel"
+                            required
+                            >
+                            <svg class="modal-icon" width="13" height="13">
+                                <use href="./img/icons.svg#icon-Vector-2"></use>
+                            </svg>
+                            </div>
+                            </li>
+                        <li class="modal-item">
+                            <label for="user-email" class="input-label">Email</label>
+                            <div class="modal-wrap">
+                        <input class="modal-input"
+                            name="user-email"
+                            type="email"
+                            id="user-email"
+                            >
+                            <svg class="modal-icon" width="15" height="12">
+                                <use href="./img/icons.svg#icon-Vector-3"></use>
+                            </svg>
+                            </div>
+                            </li>
+                        <li class="modal-item">
+                            <div class="modal-wrap">
+                            <label for="textarea" class="input-label">Comment</label>
+                            <textarea name="" id="textarea" placeholder="Text input"class="comment"></textarea>
+                            </div>
+                            </li>
+                        <li class="modal-item">
+                        <button type="submit" class="button">Send</button>
+                        </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
             <script src="./js/modal.js"></script>
