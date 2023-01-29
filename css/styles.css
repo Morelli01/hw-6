@@ -167,6 +167,10 @@ ol {
     position: relative;
 }
 
+.ht.current{
+    color: #404BBF;
+}
+
 .header-item.current::after {
     content: '';
     position: absolute;
@@ -174,7 +178,7 @@ ol {
     height: 4px;
     background-color:#404BBF;
     left: 0;
-    bottom: -100%;
+    bottom: -108%;
     border-radius: 2px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -235,7 +239,7 @@ a {
     line-height: 1.2em;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -466,7 +470,7 @@ img {
     border: 1px solid #8e8f99;
     fill: #8e8f99;
     border-radius: 4px;
-    transition: var(--transition);
+    transition: border-color var(--transition), fill var(--transition);
 }
 
 .customers-link:hover,
@@ -479,10 +483,13 @@ img {
     fill: #404bbf;
 }
 
+.footer-wrap{
+    display: flex;
+    gap: 120PX;
+}
 
 .footer>.container {
     display: flex;
-    gap: 120px;
 }
 
 .footer {
@@ -517,7 +524,7 @@ img {
 }
 
 .footer-media {
-    margin: 0, auto;
+    margin-left: 80px;
 }
 
 .footer-media>.cotainer {
@@ -532,6 +539,7 @@ img {
     font-size: 16px;
     line-height: 24px;
     color: #FFFFFF;
+    max-width: 268px;
 }
 
 .media-soc-list {
@@ -563,6 +571,77 @@ img {
 }
 
 .media-soc-icon {}
+
+.subscribe-footer{
+    top: 0;
+}
+
+.subscribe-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.subscribe-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.subscribe-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    outline: none;
+    border-radius: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    color: #FFFFFF;
+}
+
+.subscribe-input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn {
+    padding: 8px 64px 8px 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background: #4d5ae5;
+    border: 1px solid #4d5ae5;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.subscribe-btn::after {
+    content: "";
+    width: 24px;
+    height: 20px;
+    background-image: url(../img/icon\ send.svg);
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
 
 .backdrop {
     position: fixed;
@@ -614,6 +693,9 @@ img {
         fill var(--transition);
     margin-bottom: 24px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .backdrop-btn:hover,
@@ -696,6 +778,7 @@ position: absolute;
     padding-top: 8px;
     resize: none;
     color: rgba(117, 117, 117, 0.5);
+    outline: none;
 }
 
 .comment::placeholder{
@@ -705,4 +788,48 @@ position: absolute;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.04em
+}
+
+.privacy-wrap {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.privacy-text {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+
+.privacy-text .check-icon {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #2e2f42;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+    transition: background-color var(--transition), border var(--transition),
+        fill var(--transition), border-radius var(--transition);
+}
+
+.privacy-input:checked+.privacy-text .check-icon {
+    background-color: #404bbf;
+    border: 1.25px solid #404bbf;
+    border-radius: 2px;
+    fill: #f4f4fd;
+}
+
+.privacy-link {
+    color: #4d5ae5;
+    display: block;
 }
