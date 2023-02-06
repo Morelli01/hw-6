@@ -328,7 +328,6 @@ transition: var(--transition);
 
 .footer-wrap {
     display: flex;
-    gap: 120PX;
 }
 
 .footer>.container {
@@ -367,7 +366,8 @@ transition: var(--transition);
 }
 
 .footer-media {
-    margin-left: 80px;
+    margin-left: 120px;
+    margin-right: 80px;
 }
 
 .footer-media>.cotainer {
@@ -438,7 +438,7 @@ transition: var(--transition);
 }
 
 .subscribe-input {
-    width: 100%;
+    width: 264px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
@@ -594,6 +594,11 @@ transition: var(--transition);
 
 .modal-wrap {
     position: relative;
+    margin-top: 4px;
+}
+
+.modal-wrap:focus {
+    border: 1px solid #4D5AE5;
 }
 
 .modal-input:focus {
@@ -632,6 +637,11 @@ transition: var(--transition);
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.04em
+}
+
+.comment:focus,
+.comment:hover {
+    border: 1px solid #4D5AE5;
 }
 
 .privacy-wrap {
