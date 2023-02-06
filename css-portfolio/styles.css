@@ -326,10 +326,6 @@ transition: var(--transition);
     color: #434455;
 }
 
-.footer-wrap {
-    display: flex;
-}
-
 .footer>.container {
     display: flex;
 }
@@ -363,16 +359,6 @@ transition: var(--transition);
     font-size: 16px;
     line-height: 1.5em;
     letter-spacing: 0.02em;
-}
-
-.footer-media {
-    margin-left: 120px;
-    margin-right: 80px;
-}
-
-.footer-media>.cotainer {
-    display: flex;
-    gap: 120px;
 }
 
 .soc-media {
@@ -417,6 +403,18 @@ transition: var(--transition);
 
 .subscribe-footer {
     top: 0;
+}
+
+.footer-wrap {
+    display: flex;
+}
+
+.footer-text {
+    margin-right: 120px;
+}
+
+.footer-media {
+    margin-right: 80px;
 }
 
 .subscribe-wrap {

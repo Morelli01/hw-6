@@ -483,9 +483,16 @@ img {
     fill: #404bbf;
 }
 
-.footer-wrap{
+.footer-wrap {
     display: flex;
-    gap: 120PX;
+}
+
+.footer-text {
+    margin-right: 120px;
+}
+
+.footer-media {
+    margin-right: 80px;
 }
 
 .footer>.container {
@@ -523,14 +530,6 @@ img {
     letter-spacing: 0.02em;
 }
 
-.footer-media {
-    margin-left: 80px;
-}
-
-.footer-media>.cotainer {
-    display: flex;
-    gap: 120px;
-}
 
 .soc-media {
     font-family: 'Roboto';
