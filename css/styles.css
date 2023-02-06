@@ -493,7 +493,6 @@ img {
 
 .footer-media {
     margin-right: 80px;
-    width: 264px;
 }
 
 .footer>.container {
@@ -595,7 +594,7 @@ img {
 }
 
 .subscribe-input {
-    width: 100%;
+    width: 264px;
     height: 40px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: transparent;
